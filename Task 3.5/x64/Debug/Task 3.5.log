@@ -1,2 +1,5 @@
 ﻿  Task 3.5.cpp
+D:\Desktop\Программы\Visual Studio\Task 3.5\Task 3.5\Task 3.5.cpp(115,78): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+D:\Desktop\Программы\Visual Studio\Task 3.5\Task 3.5\Task 3.5.cpp(135,72): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+D:\Desktop\Программы\Visual Studio\Task 3.5\Task 3.5\Task 3.5.cpp(153,35): warning C4244: =: преобразование "double" в "int", возможна потеря данных
   Task 3.5.vcxproj -> D:\Desktop\Программы\Visual Studio\Task 3.5\x64\Debug\Task 3.5.exe
