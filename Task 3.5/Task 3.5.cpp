@@ -2,12 +2,13 @@
 using namespace std;
 
 void task_1();
+void task_2();
 
 int main()
 {
     setlocale(LC_ALL, "Russian");
 
-    task_1();
+    task_2();
 
     return 0;
 }
@@ -30,8 +31,37 @@ void task_1()
     {
         cout << "\nВведен знак препинания\n\n";
     }
+    else cout << "\nВведен неизвестный символ\n\n";    
+}
+
+void task_2()
+{
+    int user_operator = 0, abonent_operator = 0, call_duration = 0;
+    double cost = 0;
+    cout << "Мобильные операторы:\n";
+    cout << "1 - Билайн\n";
+    cout << "2 - Мегафон\n";
+    cout << "3 - МТС\n";
+    cout << "4 - Теле2\n";
+    do
+    {
+        cout << "Введите своего оператора: ";
+        cin >> user_operator;
+    } while (user_operator < 1 or user_operator > 4);
+    do
+    {
+        cout << "Введите оператора абонента: ";
+        cin >> abonent_operator;
+    } while (abonent_operator < 1 or abonent_operator > 4);
+    do
+    {
+        cout << "Введите длительность звонка в минутах: ";
+        cin >> call_duration;
+    } while (call_duration < 1);
+    if (user_operator == abonent_operator) cout << "Звонки внутри сети бесплатны\n";
     else
     {
-        cout << "\nВведен неизвестный символ\n\n";
+        cost = ((double)(user_operator + abonent_operator) / 10) * call_duration;
+        cout << "Стоимость звонка " << cost << " рублей\n";
     }
 }
